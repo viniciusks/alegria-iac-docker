@@ -4,3 +4,8 @@ services:
     image: viniciusks13/alegria-api:v4
     ports:
       - 8081:8081
+  web-server:
+    image: nginx:1.21.6
+    ports:
+      - 80:80
+      - 443:443
