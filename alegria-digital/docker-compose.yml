@@ -1,0 +1,6 @@
+version: '3'
+services:
+  api:
+    image: viniciusks13/alegria-api:v4
+    ports:
+      - 8081:8081
