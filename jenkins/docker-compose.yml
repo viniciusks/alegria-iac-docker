@@ -9,4 +9,4 @@ services:
       - 50000:50000
     container_name: jenkins
     volumes:
-      - $HOME/www/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - $HOME/www/data/jenkins_configuration:/var/jenkins_home
