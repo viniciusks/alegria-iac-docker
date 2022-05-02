@@ -22,3 +22,7 @@ services:
     container_name: jenkins
     volumes:
       - $HOME/www/data/jenkins_configuration:/var/jenkins_home
+networks:
+  default:
+    external:
+      name: alegria-digital_default
