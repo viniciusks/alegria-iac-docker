@@ -4,6 +4,10 @@ services:
     image: viniciusks13/alegria-api:v4
     ports:
       - 8081:8081
+  api-player:
+    image: viniciusks13/alegria-audio-player-api:1.0
+    ports:
+      - 3000:3000
   # web-server:
   #   image: nginx:1.21.6
   #   ports:
