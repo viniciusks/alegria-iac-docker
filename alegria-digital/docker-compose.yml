@@ -8,6 +8,16 @@ services:
     image: viniciusks13/alegria-audio-player-api:1.0
     ports:
       - 3000:3000
+  jenkins:
+    image: jenkins/jenkins:lts
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - $HOME/www/data/jenkins_configuration:/var/jenkins_home
   # web-server:
   #   image: nginx:1.21.6
   #   ports:
