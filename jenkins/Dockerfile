@@ -4,7 +4,6 @@ FROM jenkins/jenkins:lts
 USER root
 
 RUN apt-get update \
-    && apt-get install -y python python3 python3-venv zip \
-    && python -m ensurepip --upgrade
+    && apt-get install -y python python3 python3-venv python3-pip zip
 
 USER jenkins
