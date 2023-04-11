@@ -1,12 +1,12 @@
 version: '3'
 services:
   api:
-    # image: viniciusks13/alegria-api:v4
-    build: $HOME/alegria_api
+    image: viniciusks13/alegria-api:v4
+    # build: $HOME/alegria_api
     ports:
       - 8081:8081
   api-player:
-    # image: viniciusks13/alegria_audio_player_api:local # viniciusks13/alegria-audio-player-api:1.0
-    build: $HOME/alegria-audio-player-api
+    image: viniciusks13/alegria_audio_player_api:0.1 # viniciusks13/alegria-audio-player-api:1.0
+    # build: $HOME/alegria-audio-player-api
     ports:
       - 3000:3000
